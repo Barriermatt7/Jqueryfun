@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Fun</title>
+    
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+    
+
+   <ul class="list">
+       <li>one</li>
+       <li class="special">two</li>
+       <li>three</li>
+       <li>
+            <ul class="sublist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+       </li>
+   </ul>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script>
+/* When I click evrything gets the class special except what I click on-great for adding 
+    Highlights to someone clicking on a button*/
+
+/* $(function() {
+    $('li').on('click', function() {
+        $(this).removeClass('special');
+        $(this).siblings().addClass('special');
+    }); */
+
+/*Filter find li's filtered by list and remove */
+/* $(function() {
+    $('.list').on('click', function() {
+        $(this).find('li').filter('.special').remove();
+        
+    }); */
+
+/*if its a special I want an alert special- added in hide if click and special */
+/*$(function() {
+    $('.special').on('click', function() {
+        $(this).hide();
+        /* if( $(this).is('.special')){  */
+            /*if( $(this).not('.special')){
+            alert('not special');
+        } */
+
+/*If click on sublist each sublist hides individually notice added .sublist
+    and li- If I want to do other stuff to the parents and still have sublist hide
+    add if this parent sublist */
+
+ /* $(function() {
+    $('li').on('click', function() {
+        console.log('clicked li');
+         other stuff goes above this 
+        If ($(this).parent().is('.sublist') ) {
+        $(this).hide();}
+        
+    });
+}); */
+
+
+</script>
+</body>
+</html>
